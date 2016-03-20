@@ -17,11 +17,12 @@ def add():
 def remove():
     global mylist
     select = listbox.curselection() # Set a variable for the currently selected item
-
-    for i,n in enumerate(select): #set a for loop to iterate through selected items
-        index = int(i)  #convert the item to an integer to get the index
-        listbox.delete(index,index) #use the index to remove the item from the listbox
+    print(select)
+    for i in enumerate(select): #set a for loop to iterate through selected items
+        index = i
+        print(index)
         mylist.pop(index)   # use the same index to remove from the list
+        listbox.delete(index,index) #use the index to remove the item from the listbox
         statusText.set("Removed an item from the list")
         print(mylist) # testing
 
