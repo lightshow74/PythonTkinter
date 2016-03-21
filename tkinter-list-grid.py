@@ -24,6 +24,7 @@ def remove():
         mylist.pop(index)
         listbox.delete(index,index)
         print(mylist)
+        statusText.set("Removed item {0} from the list".format(index))
 
 """
     for i in enumerate(select): #set a for loop to iterate through selected items
@@ -31,7 +32,7 @@ def remove():
         print(index)
         mylist.pop(index)   # use the same index to remove from the list
         listbox.delete(index,index) #use the index to remove the item from the listbox
-        statusText.set("Removed an item from the list")
+        
         print(mylist) # testing
 """
 
