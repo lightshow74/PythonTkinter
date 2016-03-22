@@ -9,6 +9,8 @@ root = Tk()
 root.geometry("350x350")
 root.configure(bg="#ffcc00")
 
+""" This is a small change to the file """
+
 f1 = Frame(root, bg="#ffcc00")
 f2 = Frame(root, bg="#ffcc00")
 f3 = Frame(root, bg="#ffcc00")
