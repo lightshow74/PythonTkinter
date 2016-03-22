@@ -24,6 +24,7 @@ def remove():
         mylist.pop(index)
         listbox.delete(index,index)
         print(mylist)
+        statusText.set("Removed item {0} from the list".format(index))
 
 def close():
     root.destroy()
